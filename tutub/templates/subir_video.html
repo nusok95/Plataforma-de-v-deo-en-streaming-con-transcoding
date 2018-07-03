@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %} 
+{% block titulo %}Subir vídeo{% endblock %}
+{% block estilos %}
+<link href="/static/css/subir_video.css" rel="stylesheet" type="text/css">
+<!-- <link rel="stylesheet" href="/static/css/component.css" type="text/css"> -->
+{% endblock %} 
+
+{% block scripts %}
+<script src="/static/js/subir_archivo.js"></script> 
+<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+{% endblock %} 
+{% block contenido %} 
+ 
+{% if status == 'success' %}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>{{ mensaje }}</strong> 
+      </div>
+{% elif status == 'error' %}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>{{ mensaje }}</strong> 
+      </div>
+{% endif %}
+
+    <div class="container">
+        <div class="card  mx-auto mt-18">
+            <div class="card-header">Subir vídeo en Tutub
+                <i class="fa fa-fw fa-rebel" style="color:red"></i>
+            </div>
+            <div class="card-body">
+                <form action="" method="post" id = "form" enctype="multipart/form-data">{% csrf_token %} 
+                    {{ form|crispy }}     
+                          
+                    <button type="submit" id = "button" class="btn btn-primary btn-block" value="Submit">Subir vídeo</button>
+                </form>
+            </div>
+
+            {% endblock %}

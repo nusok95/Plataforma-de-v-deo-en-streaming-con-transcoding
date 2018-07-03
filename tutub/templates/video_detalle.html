@@ -1,0 +1,45 @@
+{% extends "base.html" %} 
+{ {% block estilos %}
+<link rel="stylesheet" href="/static/css/video_detalle.css">
+{% endblock estilos %}}
+
+{% block scripts %}
+<script>
+        // Grab a handle to the video
+        var video = document.getElementById("video");
+        // Turn off the default controls
+        video.controls = false;
+     </script>
+{% endblock scripts %}
+{% block contenido %}
+
+<div class ="container"> 
+        <div class = "row" >       
+      <div class = "col-sm-12">
+   
+<div class="card">
+<video class="img-card"  width="" height="" controls>
+    <source src="{{ MEDIA }}/{{ video.ruta }}" type="video/mp4">
+    <source src="/media/{{ video.archivo }}" type="video/mp4">
+</video>
+<div class="card-content">
+        <h4 class="card-title ">
+            <a href="/video/{{video.id}}"> {{video.nombre}}</a>
+          </h4>
+        <p class="card-text">{{video.descripcion}}</p>
+        
+      </div>
+      <div class="card-footer">
+        <small class="text-muted col-sm-4"><i class="fa fa-fw fa-user-circle" style="color:rgb(0, 0, 0)"></i>{{video.usuario}}</small>
+        <small class="text-muted col-sm-4"><i class="fa fa-fw fa-eye" style="color:rgb(0, 0, 0)"></i>{{video.visitas}}</small>
+        <small class="text-muted col-sm-4"><i class="fa fa-fw fa-calendar" style="color:rgb(0, 0, 0)"></i>{{video.fecha_publicacion |date:"SHORT_DATE_FORMAT" }} {{video.fecha_publicacion |time:"P" }} </small>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+{% endblock contenido %}
+
+
+

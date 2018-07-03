@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutub>
+  <usuario>
+    <first_name>JUan</first_name>
+    <last_name>Lopez</last_name>
+    <usernam>juanlo</usernam>
+    <email>juanlo@hotmail.com</email>
+    <password>12345</password>
+    <is_superuser>0</is_superuser>
+  </usuario>
+  <usuario>
+    <first_name>Jessica</first_name>
+    <last_name>Hernández</last_name>
+    <username>jess</username>
+    <email>jess@hotmail.com</email>
+    <password>12345</password>
+    <is_superuser>1</is_superuser>
+  </usuario>
+  
+
+  </tutub>

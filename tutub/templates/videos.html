@@ -1,0 +1,76 @@
+  {% extends "base.html" %}
+  {% block titulo %}Vídeos{% endblock %}
+  
+  
+
+    {% block estilos %}
+    <link rel="stylesheet" href="/static/css/videos.css">
+  {% endblock estilos %}
+  {% block scripts %}<script type="text/javascript" src="/static/js/bootstrap-fileprogress.js"> </script>  {% endblock %}
+  {% block contenido %}
+  <ul class="navbar-nav ml-auto">
+  <li class="dropdown">
+      <a class="dropdown-toggle mr-lg-2" id="alertsDropdown" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-fw fa-filter" style="color:rgb(0, 0, 0)"></i>
+        <span class="d-lg-none" style="color:rgb(0, 0, 0)">Filtros
+          <span id = "notificaciones"></span>
+        </span>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+        <h6 class="dropdown-header">Mostrar vídeos:</h6>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/filtro/vistos">
+          <span><strong><i class="fa fa-fw fa-eye" style="color:rgb(0, 0, 0)"></i></i>Más vistos<i</></strong>
+          </span>
+        </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/filtro/recientes">
+            <span><strong><i class="fa fa-fw fa-clock-o" style="color:rgb(0, 0, 0)"></i></i>Más recientes<i</></strong>
+            </span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/filtro/buscados">
+              <span><strong><i class="fa fa-fw fa-search-plus" style="color:rgb(0, 0, 0)"></i></i>Más buscados<i</></strong>
+              </span>
+            </a>
+            <div class="dropdown-divider"></div>
+      </div>
+    </li>
+  </ul>
+
+
+  {% if resultado is True %}
+<h6 class = "col-sm-12">Resultados para: <strong> {{busqueda}}</strong></h6>
+  {% endif %}
+
+
+  <div class ="container-fluid"> 
+      <div class = "row" >  
+        {% for video  in videos %}
+    
+    <div class = "col-sm-4">
+      <div class="card">
+          <a class="img-card" href="/video/{{video.id}}">
+            <img src="/media/{{video.thumbnail}}"></img>
+            <span style="float:right;" ><i class="fa fa-fw fa-youtube-play" style="color:rgb(236, 8, 8)"></i></span>
+          </a>
+      <div class="card-content">
+        <h4 class="card-title">
+            <a href="/video/{{video.id}}"> {{video.nombre}}</a>
+          </h4>
+        <p class="card-text">{{video.descripcion}}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted col-sm-4"><i class="fa fa-fw fa-user-circle" style="color:rgb(0, 0, 0)"></i>{{video.usuario}}</small>
+        <small class="text-muted col-sm-4"><i class="fa fa-fw fa-eye" style="color:rgb(0, 0, 0)"></i>{{video.visitas}}</small>
+        <small class="text-muted col-sm-4"><i class="fa fa-fw fa-calendar" style="color:rgb(0, 0, 0)"></i>{{video.fecha_publicacion |date:"SHORT_DATE_FORMAT" }} {{video.fecha_publicacion |time:"P" }} </small>
+      </div>
+    </div>
+  </div>
+  
+  {% endfor %}
+
+</div>
+</div>
+
+  {% endblock %}

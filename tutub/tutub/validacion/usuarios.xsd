@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="tutub" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="tutub" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="usuario">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="first_name" type="xs:string" minOccurs="1" msdata:Ordinal="0" />
+              <xs:element name="last_name" type="xs:string" minOccurs="1" msdata:Ordinal="1" />
+              <xs:element name="username" type="xs:string" minOccurs="1" msdata:Ordinal="2" />
+              <xs:element name="email" type="xs:string" minOccurs="1" msdata:Ordinal="3" />
+              <xs:element name="password" type="xs:string" minOccurs="1" msdata:Ordinal="4" />
+              <xs:element name="is_superuser" type="xs:integer" minOccurs="1" msdata:Ordinal="5" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

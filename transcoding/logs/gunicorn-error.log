@@ -1,0 +1,2093 @@
+[2018-01-04 02:57:20 -0600] [30925] [DEBUG] Current configuration:
+  cert_reqs: 0
+  max_requests: 0
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  user: 0
+  default_proc_name: transcoding.wsgi
+  certfile: None
+  enable_stdio_inheritance: False
+  pidfile: None
+  syslog: False
+  when_ready: <function WhenReady.when_ready at 0x7fde8f3d6620>
+  raw_env: []
+  forwarded_allow_ips: ['127.0.0.1']
+  limit_request_line: 4094
+  backlog: 2048
+  limit_request_fields: 100
+  on_reload: <function OnReload.on_reload at 0x7fde8f3d6488>
+  pre_fork: <function Prefork.pre_fork at 0x7fde8f3d67b8>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fde8f3d6ae8>
+  sendfile: None
+  initgroups: False
+  proxy_allow_ips: ['127.0.0.1']
+  max_requests_jitter: 0
+  keepalive: 2
+  post_request: <function PostRequest.post_request at 0x7fde8f3d92f0>
+  syslog_prefix: None
+  on_starting: <function OnStarting.on_starting at 0x7fde8f3d62f0>
+  reload: False
+  pre_request: <function PreRequest.pre_request at 0x7fde8f3d91e0>
+  on_exit: <function OnExit.on_exit at 0x7fde8f3d9950>
+  daemon: False
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  ciphers: TLSv1
+  secure_scheme_headers: {'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-PROTOCOL': 'ssl'}
+  loglevel: debug
+  capture_output: False
+  pythonpath: None
+  statsd_host: None
+  config: gunicorn.conf.py
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fde8f3d6e18>
+  paste: None
+  bind: ['127.0.0.1:9001']
+  logger_class: gunicorn.glogging.Logger
+  timeout: 30
+  keyfile: None
+  ssl_version: 2
+  ca_certs: None
+  worker_int: <function WorkerInt.worker_int at 0x7fde8f3d6c80>
+  worker_class: sync
+  threads: 1
+  preload_app: False
+  group: 0
+  raw_paste_global_conf: []
+  do_handshake_on_connect: False
+  pre_exec: <function PreExec.pre_exec at 0x7fde8f3d9048>
+  proc_name: None
+  child_exit: <function ChildExit.child_exit at 0x7fde8f3d9488>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fde8f3d9620>
+  statsd_prefix: 
+  chdir: /home/carlos/transcoding
+  worker_tmp_dir: None
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  reload_engine: auto
+  spew: False
+  check_config: False
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fde8f3d97b8>
+  worker_connections: 1000
+  graceful_timeout: 30
+  limit_request_field_size: 8190
+  umask: 0
+  post_fork: <function Postfork.post_fork at 0x7fde8f3d6950>
+  tmp_upload_dir: None
+  suppress_ragged_eofs: True
+  workers: 2
+  syslog_facility: user
+  proxy_protocol: False
+[2018-01-04 02:57:20 -0600] [30925] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 02:57:20 -0600] [30925] [DEBUG] Arbiter booted
+[2018-01-04 02:57:20 -0600] [30925] [INFO] Listening at: http://127.0.0.1:9001 (30925)
+[2018-01-04 02:57:20 -0600] [30925] [INFO] Using worker: sync
+[2018-01-04 02:57:20 -0600] [30928] [INFO] Booting worker with pid: 30928
+[2018-01-04 02:57:20 -0600] [30929] [INFO] Booting worker with pid: 30929
+[2018-01-04 02:57:20 -0600] [30925] [DEBUG] 2 workers
+[2018-01-04 08:57:55 +0000] [30928] [DEBUG] GET /
+[2018-01-04 08:57:55 +0000] [30928] [DEBUG] GET /favicon.ico
+[2018-01-04 08:58:02 +0000] [30928] [DEBUG] GET /videos
+[2018-01-04 08:58:02 +0000] [30929] [DEBUG] GET /videos/
+[2018-01-04 08:58:02 +0000] [30929] [DEBUG] GET /static/rest_framework/css/bootstrap.min.css
+[2018-01-04 08:58:02 +0000] [30928] [DEBUG] GET /static/rest_framework/css/bootstrap-tweaks.css
+[2018-01-04 08:58:03 +0000] [30929] [DEBUG] GET /static/rest_framework/css/prettify.css
+[2018-01-04 08:58:03 +0000] [30928] [DEBUG] GET /static/rest_framework/css/default.css
+[2018-01-04 08:58:03 +0000] [30929] [DEBUG] GET /static/rest_framework/js/jquery-1.12.4.min.js
+[2018-01-04 08:58:03 +0000] [30928] [DEBUG] GET /static/rest_framework/js/ajax-form.js
+[2018-01-04 08:58:03 +0000] [30929] [DEBUG] GET /static/rest_framework/js/csrf.js
+[2018-01-04 08:58:03 +0000] [30929] [DEBUG] GET /static/rest_framework/js/bootstrap.min.js
+[2018-01-04 08:58:03 +0000] [30928] [DEBUG] GET /static/rest_framework/js/prettify-min.js
+[2018-01-04 08:58:03 +0000] [30929] [DEBUG] GET /static/rest_framework/js/default.js
+[2018-01-04 08:58:03 +0000] [30928] [DEBUG] GET /static/rest_framework/js/jquery-1.12.4.min.js
+[2018-01-04 08:58:03 +0000] [30929] [DEBUG] GET /static/rest_framework/js/ajax-form.js
+[2018-01-04 08:58:03 +0000] [30929] [DEBUG] GET /static/rest_framework/js/csrf.js
+[2018-01-04 08:58:03 +0000] [30929] [DEBUG] GET /static/rest_framework/js/bootstrap.min.js
+[2018-01-04 08:58:03 +0000] [30928] [DEBUG] GET /static/rest_framework/js/prettify-min.js
+[2018-01-04 08:58:03 +0000] [30928] [DEBUG] GET /static/rest_framework/js/default.js
+[2018-01-04 08:58:54 +0000] [30928] [DEBUG] GET /media/uploads/b.mp4
+[2018-01-04 08:59:06 +0000] [30928] [DEBUG] Closing connection. 
+[2018-01-04 08:59:06 +0000] [30929] [DEBUG] Closing connection. 
+[2018-01-04 08:59:06 +0000] [30929] [DEBUG] Closing connection. 
+[2018-01-04 08:59:06 +0000] [30928] [DEBUG] GET /videos/
+[2018-01-04 08:59:06 +0000] [30929] [DEBUG] Closing connection. 
+[2018-01-04 08:59:06 +0000] [30929] [DEBUG] Closing connection. 
+[2018-01-04 08:59:06 +0000] [30929] [DEBUG] GET /static/rest_framework/css/bootstrap.min.css
+[2018-01-04 08:59:06 +0000] [30928] [DEBUG] GET /static/rest_framework/css/bootstrap-tweaks.css
+[2018-01-04 08:59:06 +0000] [30929] [DEBUG] GET /static/rest_framework/css/prettify.css
+[2018-01-04 08:59:06 +0000] [30928] [DEBUG] GET /static/rest_framework/css/default.css
+[2018-01-04 08:59:06 +0000] [30929] [DEBUG] GET /static/rest_framework/js/ajax-form.js
+[2018-01-04 08:59:06 +0000] [30928] [DEBUG] GET /static/rest_framework/js/jquery-1.12.4.min.js
+[2018-01-04 08:59:06 +0000] [30928] [DEBUG] GET /static/rest_framework/js/csrf.js
+[2018-01-04 08:59:06 +0000] [30929] [DEBUG] GET /static/rest_framework/js/bootstrap.min.js
+[2018-01-04 08:59:06 +0000] [30928] [DEBUG] GET /static/rest_framework/js/prettify-min.js
+[2018-01-04 08:59:06 +0000] [30929] [DEBUG] GET /static/rest_framework/js/default.js
+[2018-01-04 08:59:06 +0000] [30929] [DEBUG] GET /static/rest_framework/js/jquery-1.12.4.min.js
+[2018-01-04 08:59:06 +0000] [30928] [DEBUG] GET /static/rest_framework/js/ajax-form.js
+[2018-01-04 08:59:06 +0000] [30929] [DEBUG] GET /static/rest_framework/js/csrf.js
+[2018-01-04 08:59:06 +0000] [30929] [DEBUG] GET /static/rest_framework/js/bootstrap.min.js
+[2018-01-04 08:59:06 +0000] [30928] [DEBUG] GET /static/rest_framework/js/prettify-min.js
+[2018-01-04 08:59:06 +0000] [30929] [DEBUG] GET /static/rest_framework/js/default.js
+[2018-01-04 08:59:16 +0000] [30929] [DEBUG] Closing connection. 
+[2018-01-04 08:59:41 +0000] [30928] [DEBUG] Closing connection. 
+[2018-01-04 09:01:37 +0000] [30928] [DEBUG] GET /media/uploads/bob_esponja.mp4
+[2018-01-04 09:06:51 +0000] [30928] [DEBUG] PUT /videos/
+[2018-01-04 09:12:03 +0000] [30929] [DEBUG] PUT /videos/
+[2018-01-04 09:12:51 +0000] [30928] [DEBUG] GET /media/uploads/2814016-hi.mp4
+[2018-01-04 09:15:52 +0000] [30929] [DEBUG] GET /media/uploads/235279-hi.mp4
+[2018-01-04 09:16:27 +0000] [30928] [DEBUG] GET /media/uploads/235279-hi.mp4
+[2018-01-04 09:18:03 +0000] [30929] [DEBUG] PUT /videos/
+[2018-01-04 09:18:24 +0000] [30928] [DEBUG] GET /media/uploads/playmateiryna___BdfdpZDnA99___.mp4
+[2018-01-04 03:21:32 -0600] [30925] [INFO] Handling signal: int
+[2018-01-04 09:21:32 +0000] [30928] [INFO] Worker exiting (pid: 30928)
+[2018-01-04 09:21:32 +0000] [30929] [INFO] Worker exiting (pid: 30929)
+[2018-01-04 03:21:32 -0600] [30925] [INFO] Shutting down: Master
+[2018-01-04 03:23:27 -0600] [31968] [DEBUG] Current configuration:
+  bind: ['127.0.0.1:9001']
+  on_starting: <function OnStarting.on_starting at 0x7f2b40ebd2f0>
+  post_request: <function PostRequest.post_request at 0x7f2b40ec02f0>
+  on_exit: <function OnExit.on_exit at 0x7f2b40ec0950>
+  threads: 1
+  loglevel: debug
+  umask: 0
+  config: gunicorn.conf.py
+  limit_request_fields: 100
+  on_reload: <function OnReload.on_reload at 0x7f2b40ebd488>
+  max_requests_jitter: 0
+  syslog_addr: udp://localhost:514
+  spew: False
+  enable_stdio_inheritance: False
+  worker_connections: 1000
+  sendfile: None
+  group: 0
+  limit_request_field_size: 8190
+  logconfig: None
+  limit_request_line: 4094
+  daemon: False
+  pidfile: None
+  pre_fork: <function Prefork.pre_fork at 0x7f2b40ebd7b8>
+  tmp_upload_dir: None
+  timeout: 30
+  backlog: 2048
+  check_config: False
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2b40ebdae8>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2b40ebde18>
+  child_exit: <function ChildExit.child_exit at 0x7f2b40ec0488>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2b40ec07b8>
+  capture_output: False
+  keyfile: None
+  initgroups: False
+  paste: None
+  logger_class: gunicorn.glogging.Logger
+  syslog: False
+  syslog_prefix: None
+  statsd_host: None
+  ssl_version: 2
+  cert_reqs: 0
+  workers: 2
+  max_requests: 0
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  chdir: /home/carlos/transcoding
+  worker_class: sync
+  preload_app: False
+  raw_env: []
+  worker_tmp_dir: None
+  user: 0
+  secure_scheme_headers: {'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https'}
+  forwarded_allow_ips: ['127.0.0.1']
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  reload_engine: auto
+  graceful_timeout: 30
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  syslog_facility: user
+  suppress_ragged_eofs: True
+  default_proc_name: transcoding.wsgi
+  when_ready: <function WhenReady.when_ready at 0x7f2b40ebd620>
+  pre_request: <function PreRequest.pre_request at 0x7f2b40ec01e0>
+  statsd_prefix: 
+  raw_paste_global_conf: []
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  certfile: None
+  ca_certs: None
+  post_fork: <function Postfork.post_fork at 0x7f2b40ebd950>
+  ciphers: TLSv1
+  proc_name: None
+  pythonpath: None
+  worker_int: <function WorkerInt.worker_int at 0x7f2b40ebdc80>
+  pre_exec: <function PreExec.pre_exec at 0x7f2b40ec0048>
+  do_handshake_on_connect: False
+  reload: False
+  keepalive: 2
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2b40ec0620>
+[2018-01-04 03:23:27 -0600] [31968] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 03:23:27 -0600] [31968] [DEBUG] Arbiter booted
+[2018-01-04 03:23:27 -0600] [31968] [INFO] Listening at: http://127.0.0.1:9001 (31968)
+[2018-01-04 03:23:27 -0600] [31968] [INFO] Using worker: sync
+[2018-01-04 03:23:27 -0600] [31971] [INFO] Booting worker with pid: 31971
+[2018-01-04 03:23:27 -0600] [31972] [INFO] Booting worker with pid: 31972
+[2018-01-04 03:23:27 -0600] [31968] [DEBUG] 2 workers
+[2018-01-04 09:23:43 +0000] [31972] [DEBUG] GET /media/uploads/playmateiryna___BdfdpZDnA99___.mp4
+[2018-01-04 03:30:06 -0600] [31968] [INFO] Handling signal: int
+[2018-01-04 09:30:06 +0000] [31971] [INFO] Worker exiting (pid: 31971)
+[2018-01-04 09:30:06 +0000] [31972] [INFO] Worker exiting (pid: 31972)
+[2018-01-04 03:30:07 -0600] [31968] [INFO] Shutting down: Master
+[2018-01-04 05:57:07 -0600] [6908] [DEBUG] Current configuration:
+  pre_request: <function PreRequest.pre_request at 0x7f3a8004c1e0>
+  paste: None
+  ssl_version: 2
+  raw_paste_global_conf: []
+  keyfile: None
+  certfile: None
+  cert_reqs: 0
+  ca_certs: None
+  limit_request_field_size: 8190
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f3a80049ae8>
+  pre_exec: <function PreExec.pre_exec at 0x7f3a8004c048>
+  preload_app: False
+  forwarded_allow_ips: ['127.0.0.1']
+  proxy_protocol: False
+  max_requests_jitter: 0
+  ciphers: TLSv1
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  loglevel: debug
+  syslog_facility: user
+  bind: ['127.0.0.1:9001']
+  chdir: /home/carlos/transcoding
+  statsd_prefix: 
+  tmp_upload_dir: None
+  threads: 1
+  proc_name: None
+  worker_class: sync
+  max_requests: 0
+  keepalive: 2
+  suppress_ragged_eofs: True
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  capture_output: False
+  enable_stdio_inheritance: False
+  child_exit: <function ChildExit.child_exit at 0x7f3a8004c488>
+  check_config: False
+  daemon: False
+  pre_fork: <function Prefork.pre_fork at 0x7f3a800497b8>
+  reload: False
+  when_ready: <function WhenReady.when_ready at 0x7f3a80049620>
+  logger_class: gunicorn.glogging.Logger
+  syslog_prefix: None
+  on_exit: <function OnExit.on_exit at 0x7f3a8004c950>
+  spew: False
+  syslog_addr: udp://localhost:514
+  config: gunicorn.conf.py
+  sendfile: None
+  pidfile: None
+  proxy_allow_ips: ['127.0.0.1']
+  reload_engine: auto
+  backlog: 2048
+  graceful_timeout: 30
+  logconfig: None
+  syslog: False
+  raw_env: []
+  initgroups: False
+  pythonpath: None
+  workers: 2
+  worker_connections: 1000
+  on_starting: <function OnStarting.on_starting at 0x7f3a800492f0>
+  post_fork: <function Postfork.post_fork at 0x7f3a80049950>
+  worker_int: <function WorkerInt.worker_int at 0x7f3a80049c80>
+  post_request: <function PostRequest.post_request at 0x7f3a8004c2f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f3a8004c620>
+  user: 0
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-SSL': 'on'}
+  statsd_host: None
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f3a8004c7b8>
+  limit_request_line: 4094
+  default_proc_name: tutub.wsgi
+  worker_tmp_dir: None
+  timeout: 30
+  on_reload: <function OnReload.on_reload at 0x7f3a80049488>
+  limit_request_fields: 100
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f3a80049e18>
+  do_handshake_on_connect: False
+  group: 0
+  umask: 0
+[2018-01-04 05:57:08 -0600] [6908] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 05:57:08 -0600] [6908] [DEBUG] Arbiter booted
+[2018-01-04 05:57:08 -0600] [6908] [INFO] Listening at: http://127.0.0.1:9001 (6908)
+[2018-01-04 05:57:08 -0600] [6908] [INFO] Using worker: sync
+[2018-01-04 05:57:08 -0600] [6912] [INFO] Booting worker with pid: 6912
+[2018-01-04 05:57:08 -0600] [6913] [INFO] Booting worker with pid: 6913
+[2018-01-04 05:57:08 -0600] [6908] [DEBUG] 2 workers
+[2018-01-04 05:57:08 -0600] [6913] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'tutub'
+[2018-01-04 05:57:08 -0600] [6912] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'tutub'
+[2018-01-04 05:57:08 -0600] [6913] [INFO] Worker exiting (pid: 6913)
+[2018-01-04 05:57:08 -0600] [6912] [INFO] Worker exiting (pid: 6912)
+[2018-01-04 05:57:20 -0600] [6916] [DEBUG] Current configuration:
+  worker_tmp_dir: None
+  initgroups: False
+  reload_engine: auto
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  limit_request_line: 4094
+  timeout: 30
+  keyfile: None
+  limit_request_field_size: 8190
+  daemon: False
+  raw_env: []
+  user: 0
+  group: 0
+  proxy_protocol: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  loglevel: debug
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  pre_exec: <function PreExec.pre_exec at 0x7ffa85e0d048>
+  check_config: False
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  do_handshake_on_connect: False
+  worker_class: sync
+  limit_request_fields: 100
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ffa85e0aae8>
+  post_request: <function PostRequest.post_request at 0x7ffa85e0d2f0>
+  preload_app: False
+  forwarded_allow_ips: ['127.0.0.1']
+  paste: None
+  raw_paste_global_conf: []
+  logconfig: None
+  syslog: False
+  worker_exit: <function WorkerExit.worker_exit at 0x7ffa85e0d620>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ffa85e0d7b8>
+  statsd_host: None
+  tmp_upload_dir: None
+  proxy_allow_ips: ['127.0.0.1']
+  max_requests_jitter: 0
+  keepalive: 2
+  backlog: 2048
+  post_fork: <function Postfork.post_fork at 0x7ffa85e0a950>
+  worker_connections: 1000
+  syslog_addr: udp://localhost:514
+  default_proc_name: tutub.wsgi
+  syslog_facility: user
+  workers: 2
+  threads: 1
+  sendfile: None
+  spew: False
+  graceful_timeout: 30
+  bind: ['127.0.0.1:9001']
+  on_starting: <function OnStarting.on_starting at 0x7ffa85e0a2f0>
+  capture_output: False
+  chdir: /home/carlos/transcoding
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  statsd_prefix: 
+  max_requests: 0
+  when_ready: <function WhenReady.when_ready at 0x7ffa85e0a620>
+  pre_request: <function PreRequest.pre_request at 0x7ffa85e0d1e0>
+  config: gunicorn.conf.py
+  enable_stdio_inheritance: False
+  pidfile: None
+  pythonpath: None
+  on_reload: <function OnReload.on_reload at 0x7ffa85e0a488>
+  suppress_ragged_eofs: True
+  umask: 0
+  pre_fork: <function Prefork.pre_fork at 0x7ffa85e0a7b8>
+  logger_class: gunicorn.glogging.Logger
+  certfile: None
+  ciphers: TLSv1
+  worker_int: <function WorkerInt.worker_int at 0x7ffa85e0ac80>
+  proc_name: None
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ffa85e0ae18>
+  child_exit: <function ChildExit.child_exit at 0x7ffa85e0d488>
+  reload: False
+  on_exit: <function OnExit.on_exit at 0x7ffa85e0d950>
+  syslog_prefix: None
+[2018-01-04 05:57:20 -0600] [6916] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 05:57:20 -0600] [6916] [DEBUG] Arbiter booted
+[2018-01-04 05:57:20 -0600] [6916] [INFO] Listening at: http://127.0.0.1:9001 (6916)
+[2018-01-04 05:57:20 -0600] [6916] [INFO] Using worker: sync
+[2018-01-04 05:57:20 -0600] [6919] [INFO] Booting worker with pid: 6919
+[2018-01-04 05:57:20 -0600] [6919] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'tutub'
+[2018-01-04 05:57:20 -0600] [6919] [INFO] Worker exiting (pid: 6919)
+[2018-01-04 05:57:20 -0600] [6916] [INFO] Shutting down: Master
+[2018-01-04 05:57:20 -0600] [6916] [INFO] Reason: Worker failed to boot.
+[2018-01-04 05:57:22 -0600] [6922] [DEBUG] Current configuration:
+  keepalive: 2
+  config: gunicorn.conf.py
+  worker_tmp_dir: None
+  syslog_addr: udp://localhost:514
+  limit_request_fields: 100
+  sendfile: None
+  pythonpath: None
+  post_request: <function PostRequest.post_request at 0x7ff1f567d2f0>
+  backlog: 2048
+  reload: False
+  initgroups: False
+  workers: 2
+  group: 0
+  proc_name: None
+  daemon: False
+  umask: 0
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  paste: None
+  proxy_allow_ips: ['127.0.0.1']
+  do_handshake_on_connect: False
+  limit_request_line: 4094
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  default_proc_name: tutub.wsgi
+  keyfile: None
+  capture_output: False
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTOCOL': 'ssl'}
+  pre_fork: <function Prefork.pre_fork at 0x7ff1f567a7b8>
+  post_fork: <function Postfork.post_fork at 0x7ff1f567a950>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ff1f567ae18>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ff1f567d620>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_class: sync
+  max_requests_jitter: 0
+  reload_engine: auto
+  loglevel: debug
+  syslog_prefix: None
+  on_exit: <function OnExit.on_exit at 0x7ff1f567d950>
+  limit_request_field_size: 8190
+  logger_class: gunicorn.glogging.Logger
+  cert_reqs: 0
+  ca_certs: None
+  user: 0
+  ciphers: TLSv1
+  pre_exec: <function PreExec.pre_exec at 0x7ff1f567d048>
+  chdir: /home/carlos/transcoding
+  enable_stdio_inheritance: False
+  statsd_prefix: 
+  raw_env: []
+  tmp_upload_dir: None
+  worker_int: <function WorkerInt.worker_int at 0x7ff1f567ac80>
+  child_exit: <function ChildExit.child_exit at 0x7ff1f567d488>
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  syslog_facility: user
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ff1f567d7b8>
+  spew: False
+  bind: ['127.0.0.1:9001']
+  worker_connections: 1000
+  timeout: 30
+  when_ready: <function WhenReady.when_ready at 0x7ff1f567a620>
+  suppress_ragged_eofs: True
+  pre_request: <function PreRequest.pre_request at 0x7ff1f567d1e0>
+  check_config: False
+  preload_app: False
+  proxy_protocol: False
+  raw_paste_global_conf: []
+  syslog: False
+  ssl_version: 2
+  on_starting: <function OnStarting.on_starting at 0x7ff1f567a2f0>
+  threads: 1
+  max_requests: 0
+  logconfig: None
+  statsd_host: None
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ff1f567aae8>
+  pidfile: None
+  graceful_timeout: 30
+  on_reload: <function OnReload.on_reload at 0x7ff1f567a488>
+  certfile: None
+[2018-01-04 05:57:22 -0600] [6922] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 05:57:22 -0600] [6922] [DEBUG] Arbiter booted
+[2018-01-04 05:57:22 -0600] [6922] [INFO] Listening at: http://127.0.0.1:9001 (6922)
+[2018-01-04 05:57:22 -0600] [6922] [INFO] Using worker: sync
+[2018-01-04 05:57:22 -0600] [6926] [INFO] Booting worker with pid: 6926
+[2018-01-04 05:57:22 -0600] [6926] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'tutub'
+[2018-01-04 05:57:22 -0600] [6926] [INFO] Worker exiting (pid: 6926)
+[2018-01-04 05:57:22 -0600] [6922] [INFO] Shutting down: Master
+[2018-01-04 05:57:22 -0600] [6922] [INFO] Reason: Worker failed to boot.
+[2018-01-04 05:57:23 -0600] [6928] [DEBUG] Current configuration:
+  preload_app: False
+  forwarded_allow_ips: ['127.0.0.1']
+  when_ready: <function WhenReady.when_ready at 0x7fb2205e2620>
+  post_request: <function PostRequest.post_request at 0x7fb2205e52f0>
+  certfile: None
+  timeout: 30
+  keepalive: 2
+  limit_request_field_size: 8190
+  proxy_protocol: False
+  syslog: False
+  worker_exit: <function WorkerExit.worker_exit at 0x7fb2205e5620>
+  syslog_facility: user
+  daemon: False
+  pidfile: None
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-SSL': 'on'}
+  default_proc_name: tutub.wsgi
+  threads: 1
+  ca_certs: None
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  capture_output: False
+  statsd_host: None
+  paste: None
+  raw_paste_global_conf: []
+  worker_int: <function WorkerInt.worker_int at 0x7fb2205e2c80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fb2205e2e18>
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  reload_engine: auto
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fb2205e2ae8>
+  pre_request: <function PreRequest.pre_request at 0x7fb2205e51e0>
+  child_exit: <function ChildExit.child_exit at 0x7fb2205e5488>
+  on_exit: <function OnExit.on_exit at 0x7fb2205e5950>
+  enable_stdio_inheritance: False
+  spew: False
+  initgroups: False
+  syslog_prefix: None
+  max_requests_jitter: 0
+  chdir: /home/carlos/transcoding
+  proc_name: None
+  do_handshake_on_connect: False
+  logger_class: gunicorn.glogging.Logger
+  config: gunicorn.conf.py
+  on_reload: <function OnReload.on_reload at 0x7fb2205e2488>
+  max_requests: 0
+  graceful_timeout: 30
+  ssl_version: 2
+  reload: False
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  syslog_addr: udp://localhost:514
+  statsd_prefix: 
+  check_config: False
+  sendfile: None
+  worker_tmp_dir: None
+  on_starting: <function OnStarting.on_starting at 0x7fb2205e22f0>
+  pre_fork: <function Prefork.pre_fork at 0x7fb2205e27b8>
+  post_fork: <function Postfork.post_fork at 0x7fb2205e2950>
+  raw_env: []
+  user: 0
+  proxy_allow_ips: ['127.0.0.1']
+  workers: 2
+  worker_connections: 1000
+  pre_exec: <function PreExec.pre_exec at 0x7fb2205e5048>
+  keyfile: None
+  cert_reqs: 0
+  ciphers: TLSv1
+  worker_class: sync
+  limit_request_fields: 100
+  bind: ['127.0.0.1:9001']
+  backlog: 2048
+  group: 0
+  umask: 0
+  tmp_upload_dir: None
+  pythonpath: None
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fb2205e57b8>
+  loglevel: debug
+  suppress_ragged_eofs: True
+  logconfig: None
+[2018-01-04 05:57:23 -0600] [6928] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 05:57:23 -0600] [6928] [DEBUG] Arbiter booted
+[2018-01-04 05:57:23 -0600] [6928] [INFO] Listening at: http://127.0.0.1:9001 (6928)
+[2018-01-04 05:57:23 -0600] [6928] [INFO] Using worker: sync
+[2018-01-04 05:57:23 -0600] [6932] [INFO] Booting worker with pid: 6932
+[2018-01-04 05:57:23 -0600] [6932] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'tutub'
+[2018-01-04 05:57:23 -0600] [6932] [INFO] Worker exiting (pid: 6932)
+[2018-01-04 05:57:23 -0600] [6928] [INFO] Shutting down: Master
+[2018-01-04 05:57:23 -0600] [6928] [INFO] Reason: Worker failed to boot.
+[2018-01-04 05:57:34 -0600] [6937] [DEBUG] Current configuration:
+  check_config: False
+  do_handshake_on_connect: False
+  threads: 1
+  capture_output: False
+  syslog: False
+  timeout: 30
+  pidfile: None
+  enable_stdio_inheritance: False
+  preload_app: False
+  user: 0
+  pythonpath: None
+  proxy_allow_ips: ['127.0.0.1']
+  certfile: None
+  pre_fork: <function Prefork.pre_fork at 0x7ff74ad147b8>
+  keyfile: None
+  limit_request_fields: 100
+  syslog_facility: user
+  umask: 0
+  worker_class: sync
+  spew: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  ca_certs: None
+  pre_exec: <function PreExec.pre_exec at 0x7ff74ad17048>
+  post_request: <function PostRequest.post_request at 0x7ff74ad172f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ff74ad17620>
+  statsd_prefix: 
+  chdir: /home/carlos/transcoding
+  raw_env: []
+  paste: None
+  max_requests_jitter: 0
+  on_starting: <function OnStarting.on_starting at 0x7ff74ad142f0>
+  reload: False
+  daemon: False
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTOCOL': 'ssl'}
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ff74ad14ae8>
+  logconfig: None
+  child_exit: <function ChildExit.child_exit at 0x7ff74ad17488>
+  tmp_upload_dir: None
+  raw_paste_global_conf: []
+  when_ready: <function WhenReady.when_ready at 0x7ff74ad14620>
+  limit_request_field_size: 8190
+  initgroups: False
+  forwarded_allow_ips: ['127.0.0.1']
+  ssl_version: 2
+  on_reload: <function OnReload.on_reload at 0x7ff74ad14488>
+  logger_class: gunicorn.glogging.Logger
+  statsd_host: None
+  bind: ['127.0.0.1:9001']
+  default_proc_name: tutub.wsgi
+  post_fork: <function Postfork.post_fork at 0x7ff74ad14950>
+  pre_request: <function PreRequest.pre_request at 0x7ff74ad171e0>
+  worker_tmp_dir: None
+  proxy_protocol: False
+  worker_int: <function WorkerInt.worker_int at 0x7ff74ad14c80>
+  workers: 2
+  worker_connections: 1000
+  proc_name: None
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  syslog_addr: udp://localhost:514
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ff74ad14e18>
+  sendfile: None
+  cert_reqs: 0
+  suppress_ragged_eofs: True
+  ciphers: TLSv1
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ff74ad177b8>
+  on_exit: <function OnExit.on_exit at 0x7ff74ad17950>
+  max_requests: 0
+  keepalive: 2
+  reload_engine: auto
+  loglevel: debug
+  syslog_prefix: None
+  backlog: 2048
+  config: gunicorn.conf.py
+  limit_request_line: 4094
+  graceful_timeout: 30
+  group: 0
+[2018-01-04 05:57:34 -0600] [6937] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 05:57:34 -0600] [6937] [DEBUG] Arbiter booted
+[2018-01-04 05:57:34 -0600] [6937] [INFO] Listening at: http://127.0.0.1:9001 (6937)
+[2018-01-04 05:57:34 -0600] [6937] [INFO] Using worker: sync
+[2018-01-04 05:57:34 -0600] [6940] [INFO] Booting worker with pid: 6940
+[2018-01-04 05:57:34 -0600] [6940] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'tutub'
+[2018-01-04 05:57:34 -0600] [6940] [INFO] Worker exiting (pid: 6940)
+[2018-01-04 05:57:34 -0600] [6941] [INFO] Booting worker with pid: 6941
+[2018-01-04 05:57:34 -0600] [6941] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'tutub'
+[2018-01-04 05:57:34 -0600] [6941] [INFO] Worker exiting (pid: 6941)
+[2018-01-04 05:57:35 -0600] [6937] [INFO] Shutting down: Master
+[2018-01-04 05:57:35 -0600] [6937] [INFO] Reason: Worker failed to boot.
+[2018-01-04 05:59:19 -0600] [7075] [DEBUG] Current configuration:
+  keyfile: None
+  certfile: None
+  worker_tmp_dir: None
+  limit_request_fields: 100
+  ca_certs: None
+  spew: False
+  proc_name: None
+  raw_env: []
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  logconfig: None
+  syslog_facility: user
+  do_handshake_on_connect: False
+  on_reload: <function OnReload.on_reload at 0x7f720550e488>
+  when_ready: <function WhenReady.when_ready at 0x7f720550e620>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f720550eae8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f7205511620>
+  chdir: /home/carlos/transcoding
+  pidfile: None
+  user: 0
+  pythonpath: None
+  worker_connections: 1000
+  graceful_timeout: 30
+  suppress_ragged_eofs: True
+  pre_exec: <function PreExec.pre_exec at 0x7f7205511048>
+  tmp_upload_dir: None
+  post_fork: <function Postfork.post_fork at 0x7f720550e950>
+  syslog_addr: udp://localhost:514
+  syslog: False
+  statsd_host: None
+  statsd_prefix: 
+  bind: ['127.0.0.1:9001']
+  forwarded_allow_ips: ['127.0.0.1']
+  backlog: 2048
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f72055117b8>
+  loglevel: debug
+  max_requests_jitter: 0
+  reload_engine: auto
+  keepalive: 2
+  proxy_protocol: False
+  capture_output: False
+  sendfile: None
+  worker_int: <function WorkerInt.worker_int at 0x7f720550ec80>
+  reload: False
+  pre_fork: <function Prefork.pre_fork at 0x7f720550e7b8>
+  timeout: 30
+  pre_request: <function PreRequest.pre_request at 0x7f72055111e0>
+  preload_app: False
+  daemon: False
+  group: 0
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-SSL': 'on'}
+  cert_reqs: 0
+  initgroups: False
+  limit_request_line: 4094
+  umask: 0
+  ciphers: TLSv1
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  syslog_prefix: None
+  enable_stdio_inheritance: False
+  default_proc_name: tutub.wsgi
+  max_requests: 0
+  limit_request_field_size: 8190
+  on_starting: <function OnStarting.on_starting at 0x7f720550e2f0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f720550ee18>
+  post_request: <function PostRequest.post_request at 0x7f72055112f0>
+  child_exit: <function ChildExit.child_exit at 0x7f7205511488>
+  logger_class: gunicorn.glogging.Logger
+  threads: 1
+  check_config: False
+  worker_class: sync
+  paste: None
+  proxy_allow_ips: ['127.0.0.1']
+  raw_paste_global_conf: []
+  ssl_version: 2
+  config: gunicorn.conf.py
+  workers: 2
+  on_exit: <function OnExit.on_exit at 0x7f7205511950>
+[2018-01-04 05:59:19 -0600] [7075] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 05:59:19 -0600] [7075] [DEBUG] Arbiter booted
+[2018-01-04 05:59:19 -0600] [7075] [INFO] Listening at: http://127.0.0.1:9001 (7075)
+[2018-01-04 05:59:19 -0600] [7075] [INFO] Using worker: sync
+[2018-01-04 05:59:19 -0600] [7078] [INFO] Booting worker with pid: 7078
+[2018-01-04 05:59:19 -0600] [7078] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'tutub'
+[2018-01-04 05:59:19 -0600] [7078] [INFO] Worker exiting (pid: 7078)
+[2018-01-04 05:59:19 -0600] [7075] [INFO] Shutting down: Master
+[2018-01-04 05:59:19 -0600] [7075] [INFO] Reason: Worker failed to boot.
+[2018-01-04 06:00:24 -0600] [7127] [DEBUG] Current configuration:
+  suppress_ragged_eofs: True
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  worker_class: sync
+  keyfile: None
+  proxy_protocol: False
+  on_starting: <function OnStarting.on_starting at 0x7f954ca5f2f0>
+  max_requests: 0
+  logconfig: None
+  initgroups: False
+  when_ready: <function WhenReady.when_ready at 0x7f954ca5f620>
+  pre_fork: <function Prefork.pre_fork at 0x7f954ca5f7b8>
+  logger_class: gunicorn.glogging.Logger
+  syslog: False
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f954ca5fe18>
+  certfile: None
+  bind: ['127.0.0.1:9001']
+  syslog_addr: udp://localhost:514
+  chdir: /home/carlos/transcoding
+  daemon: False
+  user: 0
+  group: 0
+  proc_name: None
+  pidfile: None
+  forwarded_allow_ips: ['127.0.0.1']
+  paste: None
+  workers: 2
+  worker_exit: <function WorkerExit.worker_exit at 0x7f954ca62620>
+  worker_connections: 1000
+  graceful_timeout: 30
+  syslog_prefix: None
+  ssl_version: 2
+  pre_exec: <function PreExec.pre_exec at 0x7f954ca62048>
+  post_request: <function PostRequest.post_request at 0x7f954ca622f0>
+  tmp_upload_dir: None
+  capture_output: False
+  syslog_facility: user
+  worker_tmp_dir: None
+  do_handshake_on_connect: False
+  timeout: 30
+  on_reload: <function OnReload.on_reload at 0x7f954ca5f488>
+  umask: 0
+  post_fork: <function Postfork.post_fork at 0x7f954ca5f950>
+  ca_certs: None
+  default_proc_name: tutub.wsgi
+  preload_app: False
+  statsd_prefix: 
+  raw_env: []
+  limit_request_line: 4094
+  limit_request_field_size: 8190
+  backlog: 2048
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f954ca5fae8>
+  child_exit: <function ChildExit.child_exit at 0x7f954ca62488>
+  cert_reqs: 0
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests_jitter: 0
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  pythonpath: None
+  worker_int: <function WorkerInt.worker_int at 0x7f954ca5fc80>
+  loglevel: debug
+  limit_request_fields: 100
+  reload: False
+  sendfile: None
+  spew: False
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f954ca627b8>
+  reload_engine: auto
+  config: gunicorn.conf.py
+  proxy_allow_ips: ['127.0.0.1']
+  keepalive: 2
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  enable_stdio_inheritance: False
+  statsd_host: None
+  check_config: False
+  pre_request: <function PreRequest.pre_request at 0x7f954ca621e0>
+  on_exit: <function OnExit.on_exit at 0x7f954ca62950>
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-SSL': 'on'}
+[2018-01-04 06:00:24 -0600] [7127] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 06:00:24 -0600] [7127] [DEBUG] Arbiter booted
+[2018-01-04 06:00:24 -0600] [7127] [INFO] Listening at: http://127.0.0.1:9001 (7127)
+[2018-01-04 06:00:24 -0600] [7127] [INFO] Using worker: sync
+[2018-01-04 06:00:24 -0600] [7130] [INFO] Booting worker with pid: 7130
+[2018-01-04 06:00:24 -0600] [7130] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'tutub'
+[2018-01-04 06:00:24 -0600] [7130] [INFO] Worker exiting (pid: 7130)
+[2018-01-04 06:00:24 -0600] [7127] [INFO] Shutting down: Master
+[2018-01-04 06:00:24 -0600] [7127] [INFO] Reason: Worker failed to boot.
+[2018-01-04 06:01:43 -0600] [7217] [DEBUG] Current configuration:
+  on_reload: <function OnReload.on_reload at 0x7fe66643d488>
+  cert_reqs: 0
+  umask: 0
+  proxy_allow_ips: ['127.0.0.1']
+  bind: ['127.0.0.1:9001']
+  tmp_upload_dir: None
+  loglevel: debug
+  capture_output: False
+  syslog: False
+  syslog_prefix: None
+  max_requests: 0
+  ciphers: TLSv1
+  backlog: 2048
+  suppress_ragged_eofs: True
+  preload_app: False
+  reload_engine: auto
+  worker_class: sync
+  daemon: False
+  raw_env: []
+  user: 0
+  pre_exec: <function PreExec.pre_exec at 0x7fe666440048>
+  max_requests_jitter: 0
+  graceful_timeout: 30
+  spew: False
+  check_config: False
+  do_handshake_on_connect: False
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  logger_class: gunicorn.glogging.Logger
+  syslog_facility: user
+  reload: False
+  statsd_prefix: 
+  ca_certs: None
+  chdir: /home/carlos/transcoding
+  timeout: 30
+  keepalive: 2
+  limit_request_fields: 100
+  pre_fork: <function Prefork.pre_fork at 0x7fe66643d7b8>
+  raw_paste_global_conf: []
+  statsd_host: None
+  initgroups: False
+  worker_connections: 1000
+  child_exit: <function ChildExit.child_exit at 0x7fe666440488>
+  keyfile: None
+  certfile: None
+  group: 0
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  when_ready: <function WhenReady.when_ready at 0x7fe66643d620>
+  post_fork: <function Postfork.post_fork at 0x7fe66643d950>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fe6664407b8>
+  forwarded_allow_ips: ['127.0.0.1']
+  proxy_protocol: False
+  workers: 10
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  on_starting: <function OnStarting.on_starting at 0x7fe66643d2f0>
+  worker_int: <function WorkerInt.worker_int at 0x7fe66643dc80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fe66643de18>
+  sendfile: None
+  ssl_version: 2
+  worker_tmp_dir: None
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fe66643dae8>
+  pre_request: <function PreRequest.pre_request at 0x7fe6664401e0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fe666440620>
+  on_exit: <function OnExit.on_exit at 0x7fe666440950>
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  enable_stdio_inheritance: False
+  threads: 1
+  post_request: <function PostRequest.post_request at 0x7fe6664402f0>
+  limit_request_field_size: 8190
+  pidfile: None
+  limit_request_line: 4094
+  config: gunicorn.conf.py
+  pythonpath: None
+  paste: None
+  proc_name: None
+  default_proc_name: tutub.wsgi
+[2018-01-04 06:01:43 -0600] [7217] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 06:01:43 -0600] [7217] [DEBUG] Arbiter booted
+[2018-01-04 06:01:43 -0600] [7217] [INFO] Listening at: http://127.0.0.1:9001 (7217)
+[2018-01-04 06:01:43 -0600] [7217] [INFO] Using worker: sync
+[2018-01-04 06:01:43 -0600] [7220] [INFO] Booting worker with pid: 7220
+[2018-01-04 06:01:43 -0600] [7220] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'tutub'
+[2018-01-04 06:01:43 -0600] [7220] [INFO] Worker exiting (pid: 7220)
+[2018-01-04 06:01:43 -0600] [7222] [INFO] Booting worker with pid: 7222
+[2018-01-04 06:01:43 -0600] [7222] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'tutub'
+[2018-01-04 06:01:43 -0600] [7222] [INFO] Worker exiting (pid: 7222)
+[2018-01-04 06:01:43 -0600] [7217] [INFO] Shutting down: Master
+[2018-01-04 06:01:43 -0600] [7217] [INFO] Reason: Worker failed to boot.
+[2018-01-04 06:02:18 -0600] [7242] [DEBUG] Current configuration:
+  worker_connections: 1000
+  limit_request_line: 4094
+  on_reload: <function OnReload.on_reload at 0x7f8234cee488>
+  when_ready: <function WhenReady.when_ready at 0x7f8234cee620>
+  pre_exec: <function PreExec.pre_exec at 0x7f8234cf1048>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f8234cf17b8>
+  daemon: False
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  pythonpath: None
+  syslog: False
+  syslog_prefix: None
+  workers: 10
+  timeout: 30
+  reload: False
+  initgroups: False
+  tmp_upload_dir: None
+  worker_exit: <function WorkerExit.worker_exit at 0x7f8234cf1620>
+  cert_reqs: 0
+  default_proc_name: transcoding.wsgi
+  reload_engine: auto
+  threads: 1
+  spew: False
+  post_fork: <function Postfork.post_fork at 0x7f8234cee950>
+  max_requests_jitter: 0
+  do_handshake_on_connect: False
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  logconfig: None
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f8234ceeae8>
+  raw_env: []
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-SSL': 'on'}
+  certfile: None
+  worker_int: <function WorkerInt.worker_int at 0x7f8234ceec80>
+  pre_request: <function PreRequest.pre_request at 0x7f8234cf11e0>
+  config: gunicorn.conf.py
+  proxy_protocol: False
+  worker_class: sync
+  max_requests: 0
+  graceful_timeout: 30
+  umask: 0
+  raw_paste_global_conf: []
+  keepalive: 2
+  ciphers: TLSv1
+  logger_class: gunicorn.glogging.Logger
+  proc_name: None
+  statsd_prefix: 
+  chdir: /home/carlos/transcoding
+  on_starting: <function OnStarting.on_starting at 0x7f8234cee2f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f8234cee7b8>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f8234ceee18>
+  child_exit: <function ChildExit.child_exit at 0x7f8234cf1488>
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  capture_output: False
+  enable_stdio_inheritance: False
+  forwarded_allow_ips: ['127.0.0.1']
+  paste: None
+  backlog: 2048
+  limit_request_field_size: 8190
+  ssl_version: 2
+  ca_certs: None
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  loglevel: debug
+  syslog_facility: user
+  preload_app: False
+  check_config: False
+  keyfile: None
+  suppress_ragged_eofs: True
+  limit_request_fields: 100
+  post_request: <function PostRequest.post_request at 0x7f8234cf12f0>
+  sendfile: None
+  statsd_host: None
+  proxy_allow_ips: ['127.0.0.1']
+  bind: ['127.0.0.1:9001']
+  syslog_addr: udp://localhost:514
+  on_exit: <function OnExit.on_exit at 0x7f8234cf1950>
+[2018-01-04 06:02:18 -0600] [7242] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 06:02:18 -0600] [7242] [DEBUG] Arbiter booted
+[2018-01-04 06:02:18 -0600] [7242] [INFO] Listening at: http://127.0.0.1:9001 (7242)
+[2018-01-04 06:02:18 -0600] [7242] [INFO] Using worker: sync
+[2018-01-04 06:02:18 -0600] [7245] [INFO] Booting worker with pid: 7245
+[2018-01-04 06:02:18 -0600] [7248] [INFO] Booting worker with pid: 7248
+[2018-01-04 06:02:18 -0600] [7249] [INFO] Booting worker with pid: 7249
+[2018-01-04 06:02:18 -0600] [7252] [INFO] Booting worker with pid: 7252
+[2018-01-04 06:02:18 -0600] [7254] [INFO] Booting worker with pid: 7254
+[2018-01-04 06:02:18 -0600] [7255] [INFO] Booting worker with pid: 7255
+[2018-01-04 06:02:18 -0600] [7257] [INFO] Booting worker with pid: 7257
+[2018-01-04 06:02:18 -0600] [7259] [INFO] Booting worker with pid: 7259
+[2018-01-04 06:02:19 -0600] [7261] [INFO] Booting worker with pid: 7261
+[2018-01-04 06:02:19 -0600] [7265] [INFO] Booting worker with pid: 7265
+[2018-01-04 06:02:19 -0600] [7242] [DEBUG] 10 workers
+[2018-01-04 12:03:05 +0000] [7255] [DEBUG] PUT /videos/
+[2018-01-04 06:03:29 -0600] [7242] [INFO] Handling signal: int
+[2018-01-04 12:03:29 +0000] [7252] [INFO] Worker exiting (pid: 7252)
+[2018-01-04 12:03:29 +0000] [7248] [INFO] Worker exiting (pid: 7248)
+[2018-01-04 12:03:29 +0000] [7265] [INFO] Worker exiting (pid: 7265)
+[2018-01-04 12:03:29 +0000] [7259] [INFO] Worker exiting (pid: 7259)
+[2018-01-04 12:03:29 +0000] [7249] [INFO] Worker exiting (pid: 7249)
+[2018-01-04 12:03:29 +0000] [7245] [INFO] Worker exiting (pid: 7245)
+[2018-01-04 12:03:29 +0000] [7257] [INFO] Worker exiting (pid: 7257)
+[2018-01-04 12:03:29 +0000] [7254] [INFO] Worker exiting (pid: 7254)
+[2018-01-04 12:03:29 +0000] [7255] [INFO] Worker exiting (pid: 7255)
+[2018-01-04 12:03:29 +0000] [7261] [INFO] Worker exiting (pid: 7261)
+[2018-01-04 06:03:29 -0600] [7242] [INFO] Shutting down: Master
+[2018-01-04 10:04:11 -0600] [2282] [DEBUG] Current configuration:
+  certfile: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  bind: ['127.0.0.1:9001']
+  backlog: 2048
+  loglevel: debug
+  raw_env: []
+  reload: False
+  when_ready: <function WhenReady.when_ready at 0x7fc54ffde620>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fc54ffdeae8>
+  pre_request: <function PreRequest.pre_request at 0x7fc54ffe11e0>
+  child_exit: <function ChildExit.child_exit at 0x7fc54ffe1488>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fc54ffe1620>
+  reload_engine: auto
+  limit_request_line: 4094
+  preload_app: False
+  sendfile: None
+  chdir: /home/carlos/transcoding
+  group: 0
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fc54ffdee18>
+  ssl_version: 2
+  worker_class: sync
+  max_requests: 0
+  proc_name: None
+  check_config: False
+  worker_tmp_dir: None
+  logconfig: None
+  ciphers: TLSv1
+  spew: False
+  initgroups: False
+  worker_connections: 1000
+  user: 0
+  proxy_allow_ips: ['127.0.0.1']
+  on_reload: <function OnReload.on_reload at 0x7fc54ffde488>
+  statsd_prefix: 
+  config: gunicorn.conf.py
+  threads: 1
+  ca_certs: None
+  paste: None
+  syslog_facility: user
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  limit_request_fields: 100
+  on_starting: <function OnStarting.on_starting at 0x7fc54ffde2f0>
+  do_handshake_on_connect: False
+  pre_fork: <function Prefork.pre_fork at 0x7fc54ffde7b8>
+  daemon: False
+  limit_request_field_size: 8190
+  statsd_host: None
+  pidfile: None
+  tmp_upload_dir: None
+  post_fork: <function Postfork.post_fork at 0x7fc54ffde950>
+  pre_exec: <function PreExec.pre_exec at 0x7fc54ffe1048>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fc54ffe17b8>
+  keyfile: None
+  syslog: False
+  cert_reqs: 0
+  post_request: <function PostRequest.post_request at 0x7fc54ffe12f0>
+  suppress_ragged_eofs: True
+  max_requests_jitter: 0
+  umask: 0
+  logger_class: gunicorn.glogging.Logger
+  worker_int: <function WorkerInt.worker_int at 0x7fc54ffdec80>
+  forwarded_allow_ips: ['127.0.0.1']
+  pythonpath: None
+  proxy_protocol: False
+  workers: 10
+  capture_output: False
+  enable_stdio_inheritance: False
+  on_exit: <function OnExit.on_exit at 0x7fc54ffe1950>
+  default_proc_name: transcoding.wsgi
+  raw_paste_global_conf: []
+[2018-01-04 10:04:11 -0600] [2282] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 10:04:11 -0600] [2282] [DEBUG] Arbiter booted
+[2018-01-04 10:04:11 -0600] [2282] [INFO] Listening at: http://127.0.0.1:9001 (2282)
+[2018-01-04 10:04:11 -0600] [2282] [INFO] Using worker: sync
+[2018-01-04 10:04:11 -0600] [2286] [INFO] Booting worker with pid: 2286
+[2018-01-04 10:04:11 -0600] [2287] [INFO] Booting worker with pid: 2287
+[2018-01-04 10:04:11 -0600] [2288] [INFO] Booting worker with pid: 2288
+[2018-01-04 10:04:11 -0600] [2289] [INFO] Booting worker with pid: 2289
+[2018-01-04 10:04:11 -0600] [2290] [INFO] Booting worker with pid: 2290
+[2018-01-04 10:04:11 -0600] [2291] [INFO] Booting worker with pid: 2291
+[2018-01-04 10:04:12 -0600] [2292] [INFO] Booting worker with pid: 2292
+[2018-01-04 10:04:12 -0600] [2293] [INFO] Booting worker with pid: 2293
+[2018-01-04 10:04:12 -0600] [2294] [INFO] Booting worker with pid: 2294
+[2018-01-04 10:04:12 -0600] [2295] [INFO] Booting worker with pid: 2295
+[2018-01-04 10:04:12 -0600] [2282] [DEBUG] 10 workers
+[2018-01-04 16:05:44 +0000] [2292] [DEBUG] PUT /videos/
+[2018-01-04 16:05:53 +0000] [2289] [DEBUG] GET /media/uploads/bob_esponja.mp4
+[2018-01-04 10:08:59 -0600] [2282] [INFO] Handling signal: int
+[2018-01-04 16:08:59 +0000] [2290] [INFO] Worker exiting (pid: 2290)
+[2018-01-04 16:08:59 +0000] [2291] [INFO] Worker exiting (pid: 2291)
+[2018-01-04 16:08:59 +0000] [2288] [INFO] Worker exiting (pid: 2288)
+[2018-01-04 16:08:59 +0000] [2292] [INFO] Worker exiting (pid: 2292)
+[2018-01-04 16:08:59 +0000] [2294] [INFO] Worker exiting (pid: 2294)
+[2018-01-04 16:08:59 +0000] [2286] [INFO] Worker exiting (pid: 2286)
+[2018-01-04 16:08:59 +0000] [2293] [INFO] Worker exiting (pid: 2293)
+[2018-01-04 16:08:59 +0000] [2295] [INFO] Worker exiting (pid: 2295)
+[2018-01-04 16:08:59 +0000] [2287] [INFO] Worker exiting (pid: 2287)
+[2018-01-04 16:08:59 +0000] [2289] [INFO] Worker exiting (pid: 2289)
+[2018-01-04 10:09:00 -0600] [2282] [INFO] Shutting down: Master
+[2018-01-04 10:12:11 -0600] [3293] [DEBUG] Current configuration:
+  reload: False
+  preload_app: False
+  do_handshake_on_connect: False
+  worker_exit: <function WorkerExit.worker_exit at 0x7fb2b47f2620>
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  worker_connections: 1000
+  ssl_version: 2
+  ciphers: TLSv1
+  reload_engine: auto
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fb2b47f27b8>
+  keepalive: 2
+  pidfile: None
+  graceful_timeout: 30
+  on_exit: <function OnExit.on_exit at 0x7fb2b47f2950>
+  cert_reqs: 0
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  statsd_prefix: 
+  sendfile: None
+  tmp_upload_dir: None
+  forwarded_allow_ips: ['127.0.0.1']
+  limit_request_line: 4094
+  certfile: None
+  timeout: 30
+  pre_exec: <function PreExec.pre_exec at 0x7fb2b47f2048>
+  post_request: <function PostRequest.post_request at 0x7fb2b47f22f0>
+  group: 0
+  pythonpath: None
+  spew: False
+  umask: 0
+  limit_request_fields: 100
+  max_requests: 0
+  proxy_allow_ips: ['127.0.0.1']
+  raw_paste_global_conf: []
+  max_requests_jitter: 0
+  ca_certs: None
+  pre_fork: <function Prefork.pre_fork at 0x7fb2b47ef7b8>
+  pre_request: <function PreRequest.pre_request at 0x7fb2b47f21e0>
+  worker_tmp_dir: None
+  keyfile: None
+  limit_request_field_size: 8190
+  capture_output: False
+  on_starting: <function OnStarting.on_starting at 0x7fb2b47ef2f0>
+  suppress_ragged_eofs: True
+  paste: None
+  backlog: 2048
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fb2b47efe18>
+  default_proc_name: transcoding.wsgi
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  statsd_host: None
+  raw_env: []
+  worker_int: <function WorkerInt.worker_int at 0x7fb2b47efc80>
+  user: 0
+  initgroups: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  on_reload: <function OnReload.on_reload at 0x7fb2b47ef488>
+  post_fork: <function Postfork.post_fork at 0x7fb2b47ef950>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fb2b47efae8>
+  child_exit: <function ChildExit.child_exit at 0x7fb2b47f2488>
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTOCOL': 'ssl'}
+  proc_name: None
+  workers: 10
+  config: gunicorn.conf.py
+  worker_class: sync
+  chdir: /home/carlos/transcoding
+  daemon: False
+  proxy_protocol: False
+  loglevel: debug
+  when_ready: <function WhenReady.when_ready at 0x7fb2b47ef620>
+  check_config: False
+  threads: 1
+  bind: ['127.0.0.1:9001']
+[2018-01-04 10:12:11 -0600] [3293] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 10:12:11 -0600] [3293] [DEBUG] Arbiter booted
+[2018-01-04 10:12:11 -0600] [3293] [INFO] Listening at: http://127.0.0.1:9001 (3293)
+[2018-01-04 10:12:11 -0600] [3293] [INFO] Using worker: sync
+[2018-01-04 10:12:11 -0600] [3297] [INFO] Booting worker with pid: 3297
+[2018-01-04 10:12:11 -0600] [3299] [INFO] Booting worker with pid: 3299
+[2018-01-04 10:12:11 -0600] [3303] [INFO] Booting worker with pid: 3303
+[2018-01-04 10:12:11 -0600] [3307] [INFO] Booting worker with pid: 3307
+[2018-01-04 10:12:11 -0600] [3309] [INFO] Booting worker with pid: 3309
+[2018-01-04 10:12:11 -0600] [3310] [INFO] Booting worker with pid: 3310
+[2018-01-04 10:12:11 -0600] [3311] [INFO] Booting worker with pid: 3311
+[2018-01-04 10:12:11 -0600] [3313] [INFO] Booting worker with pid: 3313
+[2018-01-04 10:12:11 -0600] [3314] [INFO] Booting worker with pid: 3314
+[2018-01-04 10:12:11 -0600] [3317] [INFO] Booting worker with pid: 3317
+[2018-01-04 10:12:11 -0600] [3293] [DEBUG] 10 workers
+[2018-01-04 16:12:26 +0000] [3299] [DEBUG] GET /media/uploads/bob_esponja_6ARDwHJ_UP99892.mp4
+[2018-01-04 10:13:09 -0600] [3293] [INFO] Handling signal: int
+[2018-01-04 16:13:09 +0000] [3297] [INFO] Worker exiting (pid: 3297)
+[2018-01-04 16:13:09 +0000] [3307] [INFO] Worker exiting (pid: 3307)
+[2018-01-04 16:13:09 +0000] [3313] [INFO] Worker exiting (pid: 3313)
+[2018-01-04 16:13:09 +0000] [3303] [INFO] Worker exiting (pid: 3303)
+[2018-01-04 16:13:09 +0000] [3311] [INFO] Worker exiting (pid: 3311)
+[2018-01-04 16:13:09 +0000] [3309] [INFO] Worker exiting (pid: 3309)
+[2018-01-04 16:13:09 +0000] [3310] [INFO] Worker exiting (pid: 3310)
+[2018-01-04 16:13:09 +0000] [3299] [INFO] Worker exiting (pid: 3299)
+[2018-01-04 16:13:09 +0000] [3314] [INFO] Worker exiting (pid: 3314)
+[2018-01-04 16:13:09 +0000] [3317] [INFO] Worker exiting (pid: 3317)
+[2018-01-04 10:13:10 -0600] [3293] [INFO] Shutting down: Master
+[2018-01-04 10:14:50 -0600] [3495] [DEBUG] Current configuration:
+  check_config: False
+  timeout: 30
+  pre_fork: <function Prefork.pre_fork at 0x7ff9e21be7b8>
+  certfile: None
+  enable_stdio_inheritance: False
+  ciphers: TLSv1
+  syslog: False
+  syslog_prefix: None
+  post_fork: <function Postfork.post_fork at 0x7ff9e21be950>
+  child_exit: <function ChildExit.child_exit at 0x7ff9e21c1488>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ff9e21c17b8>
+  chdir: /home/carlos/transcoding
+  worker_tmp_dir: None
+  paste: None
+  threads: 1
+  limit_request_field_size: 8190
+  keyfile: None
+  ssl_version: 2
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  when_ready: <function WhenReady.when_ready at 0x7ff9e21be620>
+  pre_request: <function PreRequest.pre_request at 0x7ff9e21c11e0>
+  do_handshake_on_connect: False
+  pidfile: None
+  loglevel: debug
+  user: 0
+  pythonpath: None
+  capture_output: False
+  logconfig: None
+  proc_name: None
+  proxy_allow_ips: ['127.0.0.1']
+  worker_exit: <function WorkerExit.worker_exit at 0x7ff9e21c1620>
+  reload_engine: auto
+  cert_reqs: 0
+  limit_request_line: 4094
+  workers: 10
+  worker_connections: 1000
+  max_requests: 0
+  limit_request_fields: 100
+  spew: False
+  pre_exec: <function PreExec.pre_exec at 0x7ff9e21c1048>
+  worker_class: sync
+  ca_certs: None
+  backlog: 2048
+  max_requests_jitter: 0
+  preload_app: False
+  worker_int: <function WorkerInt.worker_int at 0x7ff9e21bec80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ff9e21bee18>
+  bind: ['127.0.0.1:9001']
+  daemon: False
+  on_reload: <function OnReload.on_reload at 0x7ff9e21be488>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ff9e21beae8>
+  post_request: <function PostRequest.post_request at 0x7ff9e21c12f0>
+  raw_env: []
+  group: 0
+  umask: 0
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  proxy_protocol: False
+  raw_paste_global_conf: []
+  suppress_ragged_eofs: True
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+  graceful_timeout: 30
+  keepalive: 2
+  syslog_addr: udp://localhost:514
+  statsd_host: None
+  sendfile: None
+  initgroups: False
+  default_proc_name: transcoding.wsgi
+  on_starting: <function OnStarting.on_starting at 0x7ff9e21be2f0>
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  syslog_facility: user
+  on_exit: <function OnExit.on_exit at 0x7ff9e21c1950>
+  reload: False
+  config: gunicorn.conf.py
+[2018-01-04 10:14:50 -0600] [3495] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 10:14:50 -0600] [3495] [DEBUG] Arbiter booted
+[2018-01-04 10:14:50 -0600] [3495] [INFO] Listening at: http://127.0.0.1:9001 (3495)
+[2018-01-04 10:14:50 -0600] [3495] [INFO] Using worker: sync
+[2018-01-04 10:14:50 -0600] [3498] [INFO] Booting worker with pid: 3498
+[2018-01-04 10:14:50 -0600] [3499] [INFO] Booting worker with pid: 3499
+[2018-01-04 10:14:50 -0600] [3503] [INFO] Booting worker with pid: 3503
+[2018-01-04 10:14:50 -0600] [3505] [INFO] Booting worker with pid: 3505
+[2018-01-04 10:14:50 -0600] [3506] [INFO] Booting worker with pid: 3506
+[2018-01-04 10:14:50 -0600] [3509] [INFO] Booting worker with pid: 3509
+[2018-01-04 10:14:50 -0600] [3511] [INFO] Booting worker with pid: 3511
+[2018-01-04 10:14:50 -0600] [3510] [INFO] Booting worker with pid: 3510
+[2018-01-04 10:14:50 -0600] [3513] [INFO] Booting worker with pid: 3513
+[2018-01-04 10:14:50 -0600] [3516] [INFO] Booting worker with pid: 3516
+[2018-01-04 10:14:50 -0600] [3495] [DEBUG] 10 workers
+[2018-01-04 10:18:23 -0600] [3495] [INFO] Handling signal: int
+[2018-01-04 16:18:23 +0000] [3499] [INFO] Worker exiting (pid: 3499)
+[2018-01-04 16:18:23 +0000] [3509] [INFO] Worker exiting (pid: 3509)
+[2018-01-04 16:18:23 +0000] [3503] [INFO] Worker exiting (pid: 3503)
+[2018-01-04 16:18:23 +0000] [3498] [INFO] Worker exiting (pid: 3498)
+[2018-01-04 16:18:23 +0000] [3511] [INFO] Worker exiting (pid: 3511)
+[2018-01-04 16:18:23 +0000] [3513] [INFO] Worker exiting (pid: 3513)
+[2018-01-04 16:18:23 +0000] [3516] [INFO] Worker exiting (pid: 3516)
+[2018-01-04 16:18:23 +0000] [3505] [INFO] Worker exiting (pid: 3505)
+[2018-01-04 16:18:23 +0000] [3510] [INFO] Worker exiting (pid: 3510)
+[2018-01-04 16:18:23 +0000] [3506] [INFO] Worker exiting (pid: 3506)
+[2018-01-04 10:18:23 -0600] [3495] [INFO] Shutting down: Master
+[2018-01-04 10:18:25 -0600] [3927] [DEBUG] Current configuration:
+  syslog_prefix: None
+  sendfile: None
+  worker_exit: <function WorkerExit.worker_exit at 0x7fcf1016a620>
+  statsd_prefix: 
+  ciphers: TLSv1
+  config: gunicorn.conf.py
+  pre_request: <function PreRequest.pre_request at 0x7fcf1016a1e0>
+  on_exit: <function OnExit.on_exit at 0x7fcf1016a950>
+  daemon: False
+  cert_reqs: 0
+  logconfig: None
+  limit_request_field_size: 8190
+  workers: 10
+  threads: 1
+  timeout: 30
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  loglevel: debug
+  capture_output: False
+  worker_tmp_dir: None
+  tmp_upload_dir: None
+  keepalive: 2
+  pidfile: None
+  forwarded_allow_ips: ['127.0.0.1']
+  proxy_allow_ips: ['127.0.0.1']
+  raw_paste_global_conf: []
+  child_exit: <function ChildExit.child_exit at 0x7fcf1016a488>
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  logger_class: gunicorn.glogging.Logger
+  statsd_host: None
+  spew: False
+  do_handshake_on_connect: False
+  worker_int: <function WorkerInt.worker_int at 0x7fcf10167c80>
+  limit_request_line: 4094
+  group: 0
+  max_requests_jitter: 0
+  paste: None
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fcf10167ae8>
+  pre_exec: <function PreExec.pre_exec at 0x7fcf1016a048>
+  bind: ['127.0.0.1:9001']
+  proc_name: None
+  default_proc_name: transcoding.wsgi
+  chdir: /home/carlos/transcoding
+  initgroups: False
+  proxy_protocol: False
+  limit_request_fields: 100
+  on_starting: <function OnStarting.on_starting at 0x7fcf101672f0>
+  post_fork: <function Postfork.post_fork at 0x7fcf10167950>
+  reload: False
+  backlog: 2048
+  raw_env: []
+  on_reload: <function OnReload.on_reload at 0x7fcf10167488>
+  pre_fork: <function Prefork.pre_fork at 0x7fcf101677b8>
+  check_config: False
+  worker_connections: 1000
+  max_requests: 0
+  ssl_version: 2
+  when_ready: <function WhenReady.when_ready at 0x7fcf10167620>
+  post_request: <function PostRequest.post_request at 0x7fcf1016a2f0>
+  preload_app: False
+  syslog_addr: udp://localhost:514
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  reload_engine: auto
+  user: 0
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fcf1016a7b8>
+  keyfile: None
+  suppress_ragged_eofs: True
+  graceful_timeout: 30
+  certfile: None
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fcf10167e18>
+  syslog: False
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTOCOL': 'ssl'}
+  ca_certs: None
+  pythonpath: None
+  worker_class: sync
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  umask: 0
+[2018-01-04 10:18:25 -0600] [3927] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 10:18:25 -0600] [3927] [DEBUG] Arbiter booted
+[2018-01-04 10:18:25 -0600] [3927] [INFO] Listening at: http://127.0.0.1:9001 (3927)
+[2018-01-04 10:18:25 -0600] [3927] [INFO] Using worker: sync
+[2018-01-04 10:18:25 -0600] [3930] [INFO] Booting worker with pid: 3930
+[2018-01-04 10:18:25 -0600] [3933] [INFO] Booting worker with pid: 3933
+[2018-01-04 10:18:25 -0600] [3935] [INFO] Booting worker with pid: 3935
+[2018-01-04 10:18:25 -0600] [3937] [INFO] Booting worker with pid: 3937
+[2018-01-04 10:18:25 -0600] [3938] [INFO] Booting worker with pid: 3938
+[2018-01-04 10:18:25 -0600] [3940] [INFO] Booting worker with pid: 3940
+[2018-01-04 10:18:25 -0600] [3943] [INFO] Booting worker with pid: 3943
+[2018-01-04 10:18:25 -0600] [3944] [INFO] Booting worker with pid: 3944
+[2018-01-04 10:18:25 -0600] [3948] [INFO] Booting worker with pid: 3948
+[2018-01-04 10:18:25 -0600] [3949] [INFO] Booting worker with pid: 3949
+[2018-01-04 10:18:25 -0600] [3927] [DEBUG] 10 workers
+[2018-01-04 10:19:27 -0600] [3927] [INFO] Handling signal: int
+[2018-01-04 16:19:27 +0000] [3940] [INFO] Worker exiting (pid: 3940)
+[2018-01-04 16:19:27 +0000] [3930] [INFO] Worker exiting (pid: 3930)
+[2018-01-04 16:19:27 +0000] [3938] [INFO] Worker exiting (pid: 3938)
+[2018-01-04 16:19:27 +0000] [3949] [INFO] Worker exiting (pid: 3949)
+[2018-01-04 16:19:27 +0000] [3948] [INFO] Worker exiting (pid: 3948)
+[2018-01-04 16:19:27 +0000] [3943] [INFO] Worker exiting (pid: 3943)
+[2018-01-04 16:19:27 +0000] [3933] [INFO] Worker exiting (pid: 3933)
+[2018-01-04 16:19:27 +0000] [3935] [INFO] Worker exiting (pid: 3935)
+[2018-01-04 16:19:27 +0000] [3937] [INFO] Worker exiting (pid: 3937)
+[2018-01-04 16:19:27 +0000] [3944] [INFO] Worker exiting (pid: 3944)
+[2018-01-04 10:19:28 -0600] [3927] [INFO] Shutting down: Master
+[2018-01-04 10:22:53 -0600] [4435] [DEBUG] Current configuration:
+  reload_engine: auto
+  on_starting: <function OnStarting.on_starting at 0x7f434c1cb2f0>
+  when_ready: <function WhenReady.when_ready at 0x7f434c1cb620>
+  pre_fork: <function Prefork.pre_fork at 0x7f434c1cb7b8>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f434c1cbae8>
+  on_exit: <function OnExit.on_exit at 0x7f434c1ce950>
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  loglevel: debug
+  certfile: None
+  suppress_ragged_eofs: True
+  spew: False
+  daemon: False
+  config: gunicorn.conf.py
+  enable_stdio_inheritance: False
+  ssl_version: 2
+  worker_int: <function WorkerInt.worker_int at 0x7f434c1cbc80>
+  user: 0
+  secure_scheme_headers: {'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https'}
+  forwarded_allow_ips: ['127.0.0.1']
+  proc_name: None
+  timeout: 30
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f434c1ce7b8>
+  bind: ['127.0.0.1:9001']
+  check_config: False
+  pythonpath: None
+  syslog_prefix: None
+  pre_request: <function PreRequest.pre_request at 0x7f434c1ce1e0>
+  cert_reqs: 0
+  default_proc_name: transcoding.wsgi
+  graceful_timeout: 30
+  chdir: /home/carlos/transcoding
+  ca_certs: None
+  backlog: 2048
+  worker_exit: <function WorkerExit.worker_exit at 0x7f434c1ce620>
+  worker_connections: 1000
+  keepalive: 2
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  paste: None
+  proxy_allow_ips: ['127.0.0.1']
+  post_request: <function PostRequest.post_request at 0x7f434c1ce2f0>
+  sendfile: None
+  post_fork: <function Postfork.post_fork at 0x7f434c1cb950>
+  max_requests: 0
+  statsd_prefix: 
+  limit_request_line: 4094
+  on_reload: <function OnReload.on_reload at 0x7f434c1cb488>
+  child_exit: <function ChildExit.child_exit at 0x7f434c1ce488>
+  pidfile: None
+  proxy_protocol: False
+  worker_class: sync
+  preload_app: False
+  ciphers: TLSv1
+  threads: 1
+  max_requests_jitter: 0
+  pre_exec: <function PreExec.pre_exec at 0x7f434c1ce048>
+  reload: False
+  syslog_addr: udp://localhost:514
+  keyfile: None
+  capture_output: False
+  syslog: False
+  limit_request_fields: 100
+  raw_env: []
+  worker_tmp_dir: None
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  raw_paste_global_conf: []
+  workers: 10
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  syslog_facility: user
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f434c1cbe18>
+  statsd_host: None
+  do_handshake_on_connect: False
+  limit_request_field_size: 8190
+[2018-01-04 10:22:53 -0600] [4435] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 10:22:53 -0600] [4435] [DEBUG] Arbiter booted
+[2018-01-04 10:22:53 -0600] [4435] [INFO] Listening at: http://127.0.0.1:9001 (4435)
+[2018-01-04 10:22:53 -0600] [4435] [INFO] Using worker: sync
+[2018-01-04 10:22:53 -0600] [4438] [INFO] Booting worker with pid: 4438
+[2018-01-04 10:22:53 -0600] [4441] [INFO] Booting worker with pid: 4441
+[2018-01-04 10:22:53 -0600] [4442] [INFO] Booting worker with pid: 4442
+[2018-01-04 10:22:53 -0600] [4446] [INFO] Booting worker with pid: 4446
+[2018-01-04 10:22:53 -0600] [4447] [INFO] Booting worker with pid: 4447
+[2018-01-04 10:22:53 -0600] [4448] [INFO] Booting worker with pid: 4448
+[2018-01-04 10:22:53 -0600] [4450] [INFO] Booting worker with pid: 4450
+[2018-01-04 10:22:54 -0600] [4453] [INFO] Booting worker with pid: 4453
+[2018-01-04 10:22:54 -0600] [4455] [INFO] Booting worker with pid: 4455
+[2018-01-04 10:22:54 -0600] [4456] [INFO] Booting worker with pid: 4456
+[2018-01-04 10:22:54 -0600] [4435] [DEBUG] 10 workers
+[2018-01-04 10:32:18 -0600] [4435] [INFO] Handling signal: int
+[2018-01-04 16:32:19 +0000] [4448] [INFO] Worker exiting (pid: 4448)
+[2018-01-04 16:32:19 +0000] [4455] [INFO] Worker exiting (pid: 4455)
+[2018-01-04 16:32:19 +0000] [4453] [INFO] Worker exiting (pid: 4453)
+[2018-01-04 16:32:19 +0000] [4456] [INFO] Worker exiting (pid: 4456)
+[2018-01-04 16:32:19 +0000] [4438] [INFO] Worker exiting (pid: 4438)
+[2018-01-04 16:32:19 +0000] [4441] [INFO] Worker exiting (pid: 4441)
+[2018-01-04 16:32:19 +0000] [4442] [INFO] Worker exiting (pid: 4442)
+[2018-01-04 16:32:19 +0000] [4450] [INFO] Worker exiting (pid: 4450)
+[2018-01-04 16:32:19 +0000] [4447] [INFO] Worker exiting (pid: 4447)
+[2018-01-04 16:32:19 +0000] [4446] [INFO] Worker exiting (pid: 4446)
+[2018-01-04 10:32:19 -0600] [4435] [INFO] Shutting down: Master
+[2018-01-04 10:33:10 -0600] [5352] [DEBUG] Current configuration:
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  chdir: /home/carlos/transcoding
+  daemon: False
+  initgroups: False
+  certfile: None
+  syslog: False
+  on_starting: <function OnStarting.on_starting at 0x7f51a4b262f0>
+  sendfile: None
+  logger_class: gunicorn.glogging.Logger
+  default_proc_name: transcoding.wsgi
+  umask: 0
+  spew: False
+  check_config: False
+  limit_request_fields: 100
+  workers: 10
+  raw_paste_global_conf: []
+  ca_certs: None
+  ciphers: TLSv1
+  on_reload: <function OnReload.on_reload at 0x7f51a4b26488>
+  backlog: 2048
+  reload_engine: auto
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  preload_app: False
+  ssl_version: 2
+  pre_fork: <function Prefork.pre_fork at 0x7f51a4b267b8>
+  pre_request: <function PreRequest.pre_request at 0x7f51a4b291e0>
+  suppress_ragged_eofs: True
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  loglevel: debug
+  syslog_facility: user
+  tmp_upload_dir: None
+  pre_exec: <function PreExec.pre_exec at 0x7f51a4b29048>
+  capture_output: False
+  statsd_prefix: 
+  proc_name: None
+  worker_connections: 1000
+  cert_reqs: 0
+  timeout: 30
+  keepalive: 2
+  raw_env: []
+  user: 0
+  forwarded_allow_ips: ['127.0.0.1']
+  when_ready: <function WhenReady.when_ready at 0x7f51a4b26620>
+  pythonpath: None
+  statsd_host: None
+  proxy_protocol: False
+  max_requests_jitter: 0
+  limit_request_line: 4094
+  do_handshake_on_connect: False
+  pidfile: None
+  keyfile: None
+  config: gunicorn.conf.py
+  limit_request_field_size: 8190
+  post_fork: <function Postfork.post_fork at 0x7f51a4b26950>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f51a4b26ae8>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f51a4b26e18>
+  post_request: <function PostRequest.post_request at 0x7f51a4b292f0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f51a4b297b8>
+  enable_stdio_inheritance: False
+  max_requests: 0
+  worker_tmp_dir: None
+  paste: None
+  bind: ['127.0.0.1:9001']
+  group: 0
+  worker_class: sync
+  worker_int: <function WorkerInt.worker_int at 0x7f51a4b26c80>
+  child_exit: <function ChildExit.child_exit at 0x7f51a4b29488>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f51a4b29620>
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTOCOL': 'ssl'}
+  proxy_allow_ips: ['127.0.0.1']
+  graceful_timeout: 30
+  on_exit: <function OnExit.on_exit at 0x7f51a4b29950>
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  reload: False
+  threads: 1
+  syslog_prefix: None
+[2018-01-04 10:33:10 -0600] [5352] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 10:33:10 -0600] [5352] [DEBUG] Arbiter booted
+[2018-01-04 10:33:10 -0600] [5352] [INFO] Listening at: http://127.0.0.1:9001 (5352)
+[2018-01-04 10:33:10 -0600] [5352] [INFO] Using worker: sync
+[2018-01-04 10:33:10 -0600] [5355] [INFO] Booting worker with pid: 5355
+[2018-01-04 10:33:10 -0600] [5358] [INFO] Booting worker with pid: 5358
+[2018-01-04 10:33:10 -0600] [5360] [INFO] Booting worker with pid: 5360
+[2018-01-04 10:33:10 -0600] [5361] [INFO] Booting worker with pid: 5361
+[2018-01-04 10:33:10 -0600] [5364] [INFO] Booting worker with pid: 5364
+[2018-01-04 10:33:10 -0600] [5365] [INFO] Booting worker with pid: 5365
+[2018-01-04 10:33:10 -0600] [5366] [INFO] Booting worker with pid: 5366
+[2018-01-04 10:33:10 -0600] [5367] [INFO] Booting worker with pid: 5367
+[2018-01-04 10:33:10 -0600] [5370] [INFO] Booting worker with pid: 5370
+[2018-01-04 10:33:10 -0600] [5372] [INFO] Booting worker with pid: 5372
+[2018-01-04 10:33:10 -0600] [5352] [DEBUG] 10 workers
+[2018-01-04 16:49:18 +0000] [5365] [DEBUG] GET /media/uploads/bob_esponja_6ARDwHJ_UP99892.mp4
+[2018-01-04 16:50:43 +0000] [5372] [DEBUG] Closing connection. 
+[2018-01-04 16:52:32 +0000] [5361] [DEBUG] PUT /videos/
+[2018-01-04 18:34:33 -0600] [5352] [CRITICAL] WORKER TIMEOUT (pid:5360)
+[2018-01-05 00:34:33 +0000] [5360] [INFO] Worker exiting (pid: 5360)
+[2018-01-04 18:34:33 -0600] [5352] [CRITICAL] WORKER TIMEOUT (pid:5361)
+[2018-01-04 18:34:33 -0600] [5352] [CRITICAL] WORKER TIMEOUT (pid:5364)
+[2018-01-04 18:34:33 -0600] [5352] [CRITICAL] WORKER TIMEOUT (pid:5365)
+[2018-01-05 00:34:33 +0000] [5361] [INFO] Worker exiting (pid: 5361)
+[2018-01-04 18:34:33 -0600] [5352] [CRITICAL] WORKER TIMEOUT (pid:5366)
+[2018-01-05 00:34:33 +0000] [5366] [INFO] Worker exiting (pid: 5366)
+[2018-01-05 00:34:33 +0000] [5364] [INFO] Worker exiting (pid: 5364)
+[2018-01-05 00:34:33 +0000] [5365] [INFO] Worker exiting (pid: 5365)
+[2018-01-04 18:34:33 -0600] [5352] [CRITICAL] WORKER TIMEOUT (pid:5367)
+[2018-01-05 00:34:33 +0000] [5367] [INFO] Worker exiting (pid: 5367)
+[2018-01-04 18:34:33 -0600] [5352] [CRITICAL] WORKER TIMEOUT (pid:5370)
+[2018-01-04 18:34:33 -0600] [5352] [CRITICAL] WORKER TIMEOUT (pid:5355)
+[2018-01-04 18:34:33 -0600] [5352] [CRITICAL] WORKER TIMEOUT (pid:5358)
+[2018-01-05 00:34:33 +0000] [5370] [INFO] Worker exiting (pid: 5370)
+[2018-01-05 00:34:33 +0000] [5358] [INFO] Worker exiting (pid: 5358)
+[2018-01-05 00:34:33 +0000] [5355] [INFO] Worker exiting (pid: 5355)
+[2018-01-04 18:34:34 -0600] [8706] [INFO] Booting worker with pid: 8706
+[2018-01-04 18:34:34 -0600] [5352] [DEBUG] 2 workers
+[2018-01-04 18:34:34 -0600] [8712] [INFO] Booting worker with pid: 8712
+[2018-01-04 18:34:34 -0600] [8713] [INFO] Booting worker with pid: 8713
+[2018-01-04 18:34:34 -0600] [8719] [INFO] Booting worker with pid: 8719
+[2018-01-04 18:34:34 -0600] [8720] [INFO] Booting worker with pid: 8720
+[2018-01-04 18:34:34 -0600] [8722] [INFO] Booting worker with pid: 8722
+[2018-01-04 18:34:34 -0600] [8724] [INFO] Booting worker with pid: 8724
+[2018-01-04 18:34:34 -0600] [8725] [INFO] Booting worker with pid: 8725
+[2018-01-04 18:34:34 -0600] [8727] [INFO] Booting worker with pid: 8727
+[2018-01-04 18:34:34 -0600] [5352] [DEBUG] 10 workers
+[2018-01-04 18:42:41 -0600] [5352] [INFO] Handling signal: int
+[2018-01-05 00:42:41 +0000] [8727] [INFO] Worker exiting (pid: 8727)
+[2018-01-05 00:42:41 +0000] [8706] [INFO] Worker exiting (pid: 8706)
+[2018-01-05 00:42:41 +0000] [8725] [INFO] Worker exiting (pid: 8725)
+[2018-01-05 00:42:41 +0000] [8720] [INFO] Worker exiting (pid: 8720)
+[2018-01-05 00:42:41 +0000] [8724] [INFO] Worker exiting (pid: 8724)
+[2018-01-05 00:42:41 +0000] [8719] [INFO] Worker exiting (pid: 8719)
+[2018-01-05 00:42:41 +0000] [8713] [INFO] Worker exiting (pid: 8713)
+[2018-01-05 00:42:41 +0000] [5372] [INFO] Worker exiting (pid: 5372)
+[2018-01-05 00:42:41 +0000] [8712] [INFO] Worker exiting (pid: 8712)
+[2018-01-05 00:42:41 +0000] [8722] [INFO] Worker exiting (pid: 8722)
+[2018-01-04 18:42:42 -0600] [5352] [INFO] Shutting down: Master
+[2018-01-04 18:42:59 -0600] [9947] [DEBUG] Current configuration:
+  limit_request_line: 4094
+  logconfig: None
+  syslog_prefix: None
+  syslog_facility: user
+  statsd_host: None
+  statsd_prefix: 
+  group: 0
+  on_reload: <function OnReload.on_reload at 0x7fef5d1e7488>
+  when_ready: <function WhenReady.when_ready at 0x7fef5d1e7620>
+  worker_int: <function WorkerInt.worker_int at 0x7fef5d1e7c80>
+  backlog: 2048
+  workers: 10
+  spew: False
+  worker_class: sync
+  enable_stdio_inheritance: False
+  keyfile: None
+  ssl_version: 2
+  pre_exec: <function PreExec.pre_exec at 0x7fef5d1ea048>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fef5d1ea620>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fef5d1ea7b8>
+  capture_output: False
+  sendfile: None
+  user: 0
+  syslog: False
+  post_request: <function PostRequest.post_request at 0x7fef5d1ea2f0>
+  on_exit: <function OnExit.on_exit at 0x7fef5d1ea950>
+  daemon: False
+  worker_tmp_dir: None
+  pythonpath: None
+  paste: None
+  loglevel: debug
+  ca_certs: None
+  threads: 1
+  timeout: 30
+  keepalive: 2
+  do_handshake_on_connect: False
+  limit_request_field_size: 8190
+  graceful_timeout: 30
+  certfile: None
+  proc_name: None
+  initgroups: False
+  forwarded_allow_ips: ['127.0.0.1']
+  proxy_protocol: False
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  raw_paste_global_conf: []
+  reload: False
+  umask: 0
+  proxy_allow_ips: ['127.0.0.1']
+  limit_request_fields: 100
+  check_config: False
+  worker_connections: 1000
+  max_requests: 0
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  suppress_ragged_eofs: True
+  on_starting: <function OnStarting.on_starting at 0x7fef5d1e72f0>
+  logger_class: gunicorn.glogging.Logger
+  syslog_addr: udp://localhost:514
+  default_proc_name: transcoding.wsgi
+  pre_fork: <function Prefork.pre_fork at 0x7fef5d1e77b8>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fef5d1e7e18>
+  preload_app: False
+  cert_reqs: 0
+  reload_engine: auto
+  raw_env: []
+  config: gunicorn.conf.py
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  ciphers: TLSv1
+  max_requests_jitter: 0
+  pre_request: <function PreRequest.pre_request at 0x7fef5d1ea1e0>
+  bind: ['127.0.0.1:9001']
+  chdir: /home/carlos/transcoding
+  pidfile: None
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https'}
+  post_fork: <function Postfork.post_fork at 0x7fef5d1e7950>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fef5d1e7ae8>
+  child_exit: <function ChildExit.child_exit at 0x7fef5d1ea488>
+[2018-01-04 18:42:59 -0600] [9947] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 18:42:59 -0600] [9947] [DEBUG] Arbiter booted
+[2018-01-04 18:42:59 -0600] [9947] [INFO] Listening at: http://127.0.0.1:9001 (9947)
+[2018-01-04 18:42:59 -0600] [9947] [INFO] Using worker: sync
+[2018-01-04 18:42:59 -0600] [9950] [INFO] Booting worker with pid: 9950
+[2018-01-04 18:42:59 -0600] [9951] [INFO] Booting worker with pid: 9951
+[2018-01-04 18:42:59 -0600] [9953] [INFO] Booting worker with pid: 9953
+[2018-01-04 18:42:59 -0600] [9955] [INFO] Booting worker with pid: 9955
+[2018-01-04 18:42:59 -0600] [9956] [INFO] Booting worker with pid: 9956
+[2018-01-04 18:43:00 -0600] [9958] [INFO] Booting worker with pid: 9958
+[2018-01-04 18:43:00 -0600] [9961] [INFO] Booting worker with pid: 9961
+[2018-01-04 18:43:00 -0600] [9962] [INFO] Booting worker with pid: 9962
+[2018-01-04 18:43:00 -0600] [9965] [INFO] Booting worker with pid: 9965
+[2018-01-04 18:43:00 -0600] [9967] [INFO] Booting worker with pid: 9967
+[2018-01-04 18:43:00 -0600] [9947] [DEBUG] 10 workers
+[2018-01-04 18:44:00 -0600] [9947] [INFO] Handling signal: int
+[2018-01-05 00:44:00 +0000] [9955] [INFO] Worker exiting (pid: 9955)
+[2018-01-05 00:44:00 +0000] [9958] [INFO] Worker exiting (pid: 9958)
+[2018-01-05 00:44:00 +0000] [9953] [INFO] Worker exiting (pid: 9953)
+[2018-01-05 00:44:00 +0000] [9965] [INFO] Worker exiting (pid: 9965)
+[2018-01-05 00:44:00 +0000] [9950] [INFO] Worker exiting (pid: 9950)
+[2018-01-05 00:44:00 +0000] [9962] [INFO] Worker exiting (pid: 9962)
+[2018-01-05 00:44:00 +0000] [9951] [INFO] Worker exiting (pid: 9951)
+[2018-01-05 00:44:00 +0000] [9961] [INFO] Worker exiting (pid: 9961)
+[2018-01-05 00:44:00 +0000] [9956] [INFO] Worker exiting (pid: 9956)
+[2018-01-05 00:44:00 +0000] [9967] [INFO] Worker exiting (pid: 9967)
+[2018-01-04 18:44:00 -0600] [9947] [INFO] Shutting down: Master
+[2018-01-04 18:45:33 -0600] [10545] [DEBUG] Current configuration:
+  check_config: False
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  tmp_upload_dir: None
+  forwarded_allow_ips: ['127.0.0.1']
+  certfile: None
+  pythonpath: None
+  do_handshake_on_connect: False
+  on_starting: <function OnStarting.on_starting at 0x7f867967a2f0>
+  on_reload: <function OnReload.on_reload at 0x7f867967a488>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f867967ae18>
+  pre_exec: <function PreExec.pre_exec at 0x7f867967d048>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f867967d620>
+  reload: False
+  child_exit: <function ChildExit.child_exit at 0x7f867967d488>
+  logger_class: gunicorn.glogging.Logger
+  syslog_facility: user
+  worker_class: sync
+  worker_connections: 1000
+  preload_app: False
+  proxy_protocol: False
+  timeout: 30
+  post_fork: <function Postfork.post_fork at 0x7f867967a950>
+  loglevel: debug
+  sendfile: None
+  pre_request: <function PreRequest.pre_request at 0x7f867967d1e0>
+  proc_name: None
+  on_exit: <function OnExit.on_exit at 0x7f867967d950>
+  default_proc_name: transcoding.wsgi
+  initgroups: False
+  logconfig: None
+  max_requests_jitter: 0
+  when_ready: <function WhenReady.when_ready at 0x7f867967a620>
+  config: gunicorn.conf.py
+  bind: ['127.0.0.1:9001']
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-SSL': 'on'}
+  keyfile: None
+  suppress_ragged_eofs: True
+  statsd_prefix: 
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f867967aae8>
+  daemon: False
+  workers: 10
+  threads: 1
+  graceful_timeout: 30
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  syslog: False
+  pre_fork: <function Prefork.pre_fork at 0x7f867967a7b8>
+  worker_int: <function WorkerInt.worker_int at 0x7f867967ac80>
+  post_request: <function PostRequest.post_request at 0x7f867967d2f0>
+  cert_reqs: 0
+  ca_certs: None
+  chdir: /home/carlos/transcoding
+  raw_env: []
+  umask: 0
+  raw_paste_global_conf: []
+  ciphers: TLSv1
+  backlog: 2048
+  syslog_prefix: None
+  limit_request_fields: 100
+  paste: None
+  spew: False
+  proxy_allow_ips: ['127.0.0.1']
+  limit_request_line: 4094
+  ssl_version: 2
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f867967d7b8>
+  reload_engine: auto
+  keepalive: 2
+  limit_request_field_size: 8190
+  accesslog: /home/carlos/transcoding/logs/gunicorn-access.log
+  errorlog: /home/carlos/transcoding/logs/gunicorn-error.log
+  capture_output: False
+  syslog_addr: udp://localhost:514
+  enable_stdio_inheritance: False
+  statsd_host: None
+  max_requests: 0
+[2018-01-04 18:45:33 -0600] [10545] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 18:45:33 -0600] [10545] [DEBUG] Arbiter booted
+[2018-01-04 18:45:33 -0600] [10545] [INFO] Listening at: http://127.0.0.1:9001 (10545)
+[2018-01-04 18:45:33 -0600] [10545] [INFO] Using worker: sync
+[2018-01-04 18:45:33 -0600] [10548] [INFO] Booting worker with pid: 10548
+[2018-01-04 18:45:33 -0600] [10551] [INFO] Booting worker with pid: 10551
+[2018-01-04 18:45:34 -0600] [10553] [INFO] Booting worker with pid: 10553
+[2018-01-04 18:45:34 -0600] [10554] [INFO] Booting worker with pid: 10554
+[2018-01-04 18:45:34 -0600] [10556] [INFO] Booting worker with pid: 10556
+[2018-01-04 18:45:34 -0600] [10558] [INFO] Booting worker with pid: 10558
+[2018-01-04 18:45:34 -0600] [10559] [INFO] Booting worker with pid: 10559
+[2018-01-04 18:45:34 -0600] [10560] [INFO] Booting worker with pid: 10560
+[2018-01-04 18:45:34 -0600] [10562] [INFO] Booting worker with pid: 10562
+[2018-01-04 18:45:34 -0600] [10566] [INFO] Booting worker with pid: 10566
+[2018-01-04 18:45:34 -0600] [10545] [DEBUG] 10 workers
+[2018-01-04 18:46:03 -0600] [10545] [INFO] Handling signal: int
+[2018-01-05 00:46:03 +0000] [10560] [INFO] Worker exiting (pid: 10560)
+[2018-01-05 00:46:03 +0000] [10553] [INFO] Worker exiting (pid: 10553)
+[2018-01-05 00:46:03 +0000] [10548] [INFO] Worker exiting (pid: 10548)
+[2018-01-05 00:46:03 +0000] [10556] [INFO] Worker exiting (pid: 10556)
+[2018-01-05 00:46:03 +0000] [10554] [INFO] Worker exiting (pid: 10554)
+[2018-01-05 00:46:03 +0000] [10551] [INFO] Worker exiting (pid: 10551)
+[2018-01-05 00:46:03 +0000] [10566] [INFO] Worker exiting (pid: 10566)
+[2018-01-05 00:46:03 +0000] [10558] [INFO] Worker exiting (pid: 10558)
+[2018-01-05 00:46:03 +0000] [10559] [INFO] Worker exiting (pid: 10559)
+[2018-01-05 00:46:03 +0000] [10562] [INFO] Worker exiting (pid: 10562)
+[2018-01-04 18:46:03 -0600] [10545] [INFO] Shutting down: Master
